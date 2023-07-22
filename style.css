@@ -19,7 +19,10 @@
     overflow: hidden;
 }
 
-
+::selection {
+  color: red;
+  background: white;
+}
 
 .head  .red-head{
     
