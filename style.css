@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background: #DD5E89;  
+    background: -webkit-linear-gradient(to right, #F7BB97, #DD5E89);  
+    background: linear-gradient(to right, #F7BB97, #DD5E89); 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position:absolute;
+    overflow: hidden;
+}
+
+
+
+.head  .red-head{
+    
+    color: red;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.head  .other-head{
+    
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+
+.sub-head{
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 27px;           /*    bottom: 115px; */
+    font-size: 24px;        /*make this 30px for Mobile*/
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.line{
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 42px;          /*    bottom: 210px; */
+    font-size: 25px;        /*make this 25px for Mobile*/
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    bottom: 55px;           /*    bottom: 300px; */
+}
+
+.inputs #url{
+   width: 335px;            /*make this 335px for Mobile*/
+   height: 42px;
+   border: 1px solid white;
+   outline: none;
+   border-radius: 5px;
+}
+
+input::placeholder{
+    font-size: 15px;
+    color: rgb(216, 46, 46);
+}
+
+.btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+   }
+  
+  .btn:hover {
+    background-position: right center; 
+  }
+  
+  .btn-1 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  }
+  .name{
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 50px;            /*    bottom: 115px; */
+    font-size: 25px;        /*make this 30px for Mobile*/
+    font-weight: bold;
+    color: #fff;
+  }
+  .links{
+    position: relative;
+    bottom: 90px; 
+  }
+  .links .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 30px;
+}
+.fa-lg {
+    font-size: 27px;
+    line-height: .05em;
+    vertical-align: -0.075em;
+}
+a{
+    margin: 20px;
+    font-size: 27px;
+}
