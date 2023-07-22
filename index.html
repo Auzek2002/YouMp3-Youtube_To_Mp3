@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouMp3 - Convert Youtube Videos to Mp3</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1b94c89d79.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <span class="red-head">You</span><span class="other-head">Mp3</span>
+        </div>
+        
+        <div class="sub-head">
+            Youtube To Mp3 Converter
+        </div>
+        <div class="line">
+            Paste URL:
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Enter a URL" id="url">
+            <button class="btn btn-1" onclick="start()">Search</button>
+        </div>
+        <div class="name">
+            By Azaan Nabi Khan
+        </div>
+        <div class="links">
+            <ul class="list">
+                <li><a href="https://www.linkedin.com/in/azaan-nabi-khan-552ba9228/" target="_blank"><i class="fa-brands fa-linkedin-in  fa-lg" id="linkedin" style="color: #1a4899;"></i></a></li>
+                <li><a href="https://www.instagram.com/azaan_u_khan/?hl=en" target="_blank"><i class="fa-brands fa-instagram  fa-lg" id="insta"  style="color: #c12fb5;"></i></a></li>
+                <li><a href="https://github.com/Auzek2002" target="_blank"><i class="fa-brands fa-github fa-lg" id="git"  style="color: #3a9856;"></i></a></li>
+                <li><a href="https://twitter.com/AzaanKh92902724" target="_blank"><i class="fa-brands fa-twitter fa-lg" id="twitter"  style="color: #2181e8;"></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+   <script>
+        const api="https://convert2mp3s.com/api/button/mp3?url=";
+        const url= document.querySelector(".inputs #url");
+        function start(){
+            const input=api+url.value;
+            window.open(input,'_top');
+        }
+        url.addEventListener("keyup", (event) => {
+            if (event.keyCode === 13) {
+                start();
+            }
+        });
+    </script>
+</body>
+</html>
