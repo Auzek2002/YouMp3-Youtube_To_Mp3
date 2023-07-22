@@ -92,6 +92,7 @@ input::placeholder{
     border-radius: 10px;
     outline:none;
     border: none;
+    cursor: pointer;
    }
   
   .btn:hover {
